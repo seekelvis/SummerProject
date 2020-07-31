@@ -149,45 +149,56 @@ def analyze(prediction,testMatLabel):
     plt.show()
 if __name__ == '__main__':
 
-    trainDataMatrix, trainMatLabell = loadDataSet('D:/code/SummerProject/shallowClassifier/data/train02.csv')
-    testDataMatrix, testMatLabel = loadDataSet('D:/code/SummerProject/shallowClassifier/data/test02.csv')
-
+    # trainDataMatrix, trainMatLabell = loadDataSet('D:/code/SummerProject/shallowClassifier/data/train02.csv')
+    # testDataMatrix, testMatLabel = loadDataSet('D:/code/SummerProject/shallowClassifier/data/test02.csv')
+    #
+    # # SVMpre = SVM(trainDataMatrix, trainMatLabell,testDataMatrix)
+    # # print("SVMpre")
+    # # print(SVMpre)
+    # # analyze(SVMpre,testMatLabel)
+    #
+    #
+    # DataMatrix, MatLabell = loadDataSet('D:/code/SummerProject/shallowClassifier/data/data01.csv')
+    # trainDataMatrix, testDataMatrix, trainMatLabell,  testMatLabel = model_selection.train_test_split(DataMatrix, MatLabell, test_size=0.2, random_state=27)
+    #
+    # # sourceDataMatrix, sourceMatLabell = loadDataSet('D:/code/SummerProject/shallowClassifier/data/train01.csv')
+    # # targetData, targetLabel = loadDataSet('D:/code/SummerProject/shallowClassifier/data/test01.csv')
+    # # aData, testDataMatrix, aLabel, testMatLabel = model_selection.train_test_split(targetData, targetLabel, test_size=0.3, random_state=27)
+    # # tempData = sourceDataMatrix.tolist()
+    # # tempData.append(aData.tolist())
+    # # trainDataMatrix = np.array(tempData)
+    # # tempLabel = sourceMatLabell.tolist()
+    # # tempLabel.append(aLabel.tolist())
+    # # trainMatLabell = np.array(tempLabel)
+    # # trainDataMatrix = np.vstack(sourceDataMatrix,aData)
+    # # trainMatLabell = np.hstack(sourceMatLabell,aLabel)
+    # # print(sourceMatLabell)
+    #
+    # # #########   LR   ###########
+    # # LRpre = LR(trainDataMatrix, trainMatLabell, testDataMatrix)
+    # # # print("LRpre")
+    # # # print(LRpre)
+    # # analyze(LRpre, testMatLabel)
+    #
+    # ########   SVM   ###########
     # SVMpre = SVM(trainDataMatrix, trainMatLabell,testDataMatrix)
-    # print("SVMpre")
-    # print(SVMpre)
+    # # print("SVMpre")
+    # # print(SVMpre)
     # analyze(SVMpre,testMatLabel)
-
-
-    DataMatrix, MatLabell = loadDataSet('D:/code/SummerProject/shallowClassifier/data/data01.csv')
-    trainDataMatrix, testDataMatrix, trainMatLabell,  testMatLabel = model_selection.train_test_split(DataMatrix, MatLabell, test_size=0.2, random_state=27)
-
-    # sourceDataMatrix, sourceMatLabell = loadDataSet('D:/code/SummerProject/shallowClassifier/data/train01.csv')
-    # targetData, targetLabel = loadDataSet('D:/code/SummerProject/shallowClassifier/data/test01.csv')
-    # aData, testDataMatrix, aLabel, testMatLabel = model_selection.train_test_split(targetData, targetLabel, test_size=0.3, random_state=27)
-    # tempData = sourceDataMatrix.tolist()
-    # tempData.append(aData.tolist())
-    # trainDataMatrix = np.array(tempData)
-    # tempLabel = sourceMatLabell.tolist()
-    # tempLabel.append(aLabel.tolist())
-    # trainMatLabell = np.array(tempLabel)
-    # trainDataMatrix = np.vstack(sourceDataMatrix,aData)
-    # trainMatLabell = np.hstack(sourceMatLabell,aLabel)
-    # print(sourceMatLabell)
-
-    # #########   LR   ###########
-    # LRpre = LR(trainDataMatrix, trainMatLabell, testDataMatrix)
-    # # print("LRpre")
-    # # print(LRpre)
-    # analyze(LRpre, testMatLabel)
-
-    ########   SVM   ###########
-    SVMpre = SVM(trainDataMatrix, trainMatLabell,testDataMatrix)
-    # print("SVMpre")
-    # print(SVMpre)
-    analyze(SVMpre,testMatLabel)
 
     #########   RF  ###########
     # RFpre = RF(trainDataMatrix, trainMatLabell,testDataMatrix)
     # # print("SVMpre")
     # # print(SVMpre)
     # analyze(RFpre,testMatLabel)
+
+    x = [[],[]]
+    y = [[],[]]
+    x[0] = range(0, 10)
+    x[1] = range(3, 13)
+    y[0] = range(0, 100, 10)
+    y[1] = range(50, 150, 10)
+    plt.plot(x[0], y[0],  label="0")
+    plt.plot(x[1], y[1], label="1")
+    plt.legend()
+    plt.show()

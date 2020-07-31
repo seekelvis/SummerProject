@@ -109,7 +109,7 @@ def RF(trainDataMatrix,trainMatLabell,testDataMatrix):
     T = testDataMatrix.tolist()
     # a.tolist()
     # 定义RF模型参数
-    rf_model = RandomForestClassifier(n_estimators=200,max_depth=10,max_features=sqrt)
+    rf_model = RandomForestClassifier(n_estimators=200,max_depth=10,max_features='sqrt')
     # 训练RF模型
     rf_model.fit(X, Y)
     # 预测值
@@ -174,12 +174,12 @@ if __name__ == '__main__':
     # analyze(SVMpre,testMatLabel)
 
 
-    DataMatrix, MatLabell = loadDataSet('D:/code/SummerProject/shallowClassifier/data/data01.csv')
-    trainDataMatrix, testDataMatrix, trainMatLabell,  testMatLabel = model_selection.train_test_split(DataMatrix, MatLabell, test_size=0.2, random_state=27)
-    trainDataMatrix, valDataMatrix, trainMatLabell, valMatLabel = model_selection.train_test_split(trainDataMatrix,
-                                                                                                     trainMatLabell,
-                                                                                                     test_size=0.2,
-                                                                                                     random_state=27)
+    # DataMatrix, MatLabell = loadDataSet('D:/code/SummerProject/shallowClassifier/data/data01.csv')
+    # trainDataMatrix, testDataMatrix, trainMatLabell,  testMatLabel = model_selection.train_test_split(DataMatrix, MatLabell, test_size=0.2, random_state=27)
+    # trainDataMatrix, valDataMatrix, trainMatLabell, valMatLabel = model_selection.train_test_split(trainDataMatrix,
+    #                                                                                                  trainMatLabell,
+    #                                                                                                  test_size=0.2,
+    #                                                                                                  random_state=27)
     # sourceDataMatrix, sourceMatLabell = loadDataSet('D:/code/SummerProject/shallowClassifier/data/train01.csv')
     # targetData, targetLabel = loadDataSet('D:/code/SummerProject/shallowClassifier/data/test01.csv')
     # aData, testDataMatrix, aLabel, testMatLabel = model_selection.train_test_split(targetData, targetLabel, test_size=0.3, random_state=27)
@@ -200,13 +200,13 @@ if __name__ == '__main__':
     # analyze(LRpre, testMatLabel)
 
     ########   SVM   ###########
-    SVMpre = SVM(trainDataMatrix, trainMatLabell,valDataMatrix,valMatLabel,testDataMatrix)
-    # print("SVMpre")
-    # print(SVMpre)
-    analyze(SVMpre,testMatLabel)
-
-    #########   RF  ###########
-    # RFpre = RF(trainDataMatrix, trainMatLabell,testDataMatrix)
+    # SVMpre = SVM(trainDataMatrix, trainMatLabell,valDataMatrix,valMatLabel,testDataMatrix)
     # # print("SVMpre")
     # # print(SVMpre)
-    # analyze(RFpre,testMatLabel)
+    # analyze(SVMpre,testMatLabel)
+
+    #########   RF  ###########
+    RFpre = RF(trainDataMatrix, trainMatLabell,testDataMatrix)
+    # print("SVMpre")
+    # print(SVMpre)
+    analyze(RFpre,testMatLabel)
