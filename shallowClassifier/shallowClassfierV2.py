@@ -2,9 +2,6 @@ import time
 
 import umap
 import joblib
-from libtlda.flda import FeatureLevelDomainAdaptiveClassifier
-from libtlda.suba import SubspaceAlignedClassifier
-from libtlda.tcpr import TargetContrastivePessimisticClassifier
 from numpy import *
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -43,24 +40,16 @@ def load_data_set(fileName):
 
 def model_build(classifier, trian_features, train_labels, test_features):
     if classifier == "IW":
-        # Call an importance-weighted classifier
         # pipe = make_pipeline(StandardScaler(), ImportanceWeightedClassifier(iwe='nn'))
         # param_grid = [{}]
         # model = GridSearchCV(pipe, param_grid, cv=3)
         # model.fit(trian_features, train_labels, test_features)
         # print(model.best_params_)
-        model = ImportanceWeightedClassifier(iwe='kmm')
+
+
+        model = ImportanceWeightedClassifier(iwe='kde')
         model.fit(preprocessing.scale(trian_features), train_labels, preprocessing.scale(test_features))
 
-    elif classifier == "SUBA":
-        # Classifier based on subspace alignment
-        model =  SubspaceAlignedClassifier(loss_function='logistic')
-        model.fit(preprocessing.scale(trian_features), train_labels, preprocessing.scale(test_features))
-
-    elif classifier == "TCPR":
-        # Target Contrastive Pessimistic Classifier
-        model = TargetContrastivePessimisticClassifier(l2=0.1)
-        model.fit(preprocessing.scale(trian_features), train_labels, preprocessing.scale(test_features))
 
     else:
         if classifier == "LR":
@@ -205,8 +194,8 @@ if __name__ == '__main__':
     # umap_show(train_features_source, test_features_target)
 
     # build a modle
-    model_type_set = ["LR", "SVM", "RF", "IW", "SUBA", "TCPR"]
-    model = model_build(model_type_set[4], train_features_source, train_labels_source, test_features_source)
+    model_type_set = ["LR", "SVM", "RF", "IW"]
+    model = model_build(model_type_set[3], train_features_source, train_labels_source, test_features_source)
 
     # # prediction
     preciton_dict = dict_origin

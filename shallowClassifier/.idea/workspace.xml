@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1835038d-2d57-4198-8d9a-3522a14bfc54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR0731-004529.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR0731-004550.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR0731-010311.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR0731-010340.model" beforeDir="false" afterPath="$PROJECT_DIR$/ModLR1.model" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RF0731-011651.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVM0731-004619.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVM0731-004958.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVM0731-010559.model" beforeDir="false" afterPath="$PROJECT_DIR$/ModSVM1.model" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVMtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/shallowClassfierV1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shallowClassfier04.py" beforeDir="false" afterPath="$PROJECT_DIR$/shallowClassfier04.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,50 +91,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="shallowClassfier02" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="shallowClassifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shallowClassfier02.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="shallowClassfier03" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="shallowClassifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shallowClassfier03.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="shallowClassfier04" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="shallowClassifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,13 +113,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="shallowClassfierV2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="shallowClassifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shallowClassfierV2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="shallowClassifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.shallowClassfier04" />
+        <item itemvalue="Python.shallowClassfierV2" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.SVMtest" />
         <item itemvalue="Python.shallowClassfier" />
-        <item itemvalue="Python.shallowClassfier03" />
-        <item itemvalue="Python.shallowClassfier02" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +185,7 @@
       <workItem from="1597005609950" duration="1398000" />
       <workItem from="1597519915037" duration="7829000" />
       <workItem from="1598277655922" duration="6396000" />
-      <workItem from="1598292991223" duration="7043000" />
+      <workItem from="1598292991223" duration="29229000" />
     </task>
     <servers />
   </component>
@@ -218,7 +209,9 @@
     <SUITE FILE_PATH="coverage/shallowClassifier$LR.coverage" NAME="LR Coverage Results" MODIFIED="1594859545901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/shallowClassifier$LR01.coverage" NAME="LR01 Coverage Results" MODIFIED="1594859572441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/shallowClassifier$shallowClassfier03.coverage" NAME="shallowClassfier03 Coverage Results" MODIFIED="1595794543894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/shallowClassifier$shallowClassfier04.coverage" NAME="shallowClassfier04 Coverage Results" MODIFIED="1598316770894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/shallowClassifier$test.coverage" NAME="test Coverage Results" MODIFIED="1598907277514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/shallowClassifier$shallowClassfierV2.coverage" NAME="shallowClassfierV2 Coverage Results" MODIFIED="1598909433573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/shallowClassifier$shallowClassfier04.coverage" NAME="shallowClassfier04 Coverage Results" MODIFIED="1598910699051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/shallowClassifier$SVMtest.coverage" NAME="SVMtest Coverage Results" MODIFIED="1596154099518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/shallowClassifier$shallowClassfier02.coverage" NAME="shallowClassfier02 Coverage Results" MODIFIED="1595193872396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/shallowClassifier$shallowClassfier.coverage" NAME="shallowClassfier Coverage Results" MODIFIED="1596153783897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
